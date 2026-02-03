@@ -230,7 +230,8 @@
 
         #form-control-date-of-birth,
         #form-control-full-name,
-        #form-control-location {
+        #form-control-location,
+        #form-control-date-of-issue {
             position: absolute;
             z-index: 0;
             text-align: center;
@@ -259,6 +260,21 @@
             right: 4.6vw;
             width: 14vw
         }
+
+        #form-control-date-of-issue {
+            position: absolute;
+            top: 11.9vw;   /* ngay dưới Location */
+            right: 4.6vw;
+            width: 14vw;
+            font-size: 2vw;
+            height: 2.3vw;
+            line-height: 2.3vw;
+            background: transparent;
+            border: none;
+            text-align: center;
+        }
+
+
 
         .signature-box {
             position: absolute;
@@ -563,7 +579,8 @@
 
             #form-control-date-of-birth,
             #form-control-full-name,
-            #form-control-location {
+            #form-control-location,
+            #form-control-date-of-issue {
                 font-size: 3.3vw;
                 height: 4vw;
                 line-height: 4vw
@@ -586,6 +603,16 @@
                 top: 20.6vw;
                 right: 17.6vw
             }
+
+            #form-control-date-of-issue {
+                width: 22.4vw;
+                top: 23.6vw;
+                right: 17.6vw;
+                font-size: 3.3vw;
+                height: 4vw;
+                line-height: 4vw;
+            }
+
 
             .signature-box {
                 width: 32.8vw;
@@ -679,7 +706,9 @@
                         autocomplete="off" value=""><input type="text" id="form-control-date-of-birth"
                         class="handwriting" placeholder="Date Of Birth" autocomplete="off" maxlength="10"
                         value=""><input type="text" id="form-control-location" class="handwriting"
-                        placeholder="Location" autocomplete="off" value="">
+                        placeholder="Location" autocomplete="off" value=""><input type="text" id="form-control-date-of-issue"
+                        class="handwriting" placeholder="Date Of Issue" autocomplete="off" maxlength="10" value="">
+
                     <div class="position-absolute cursor-pointer signature-box">Sign Here</div><button
                         class="text-uppercase letter-spaced color-button"><strong>Select Color</strong></button><button
                         class="text-uppercase letter-spaced submit-button"><strong>Get Your ID</strong></button>
