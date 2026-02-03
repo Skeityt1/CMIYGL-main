@@ -265,7 +265,7 @@ if (!self.__WB_pmw) {
                               h.globalCompositeOperation = "source-over",
                               0,
                               x(0),
-                              DO = d,
+                              var DO = d,
                               h.font = "90px Nanum Pen Script",
                               W = k.measureText(DO).width,
                               p = 1530 - W / 2,
@@ -406,7 +406,7 @@ if (!self.__WB_pmw) {
                   }
                   )))()
               }
-              ), [j, re, z, Q, ee, de, Y]),
+              ), [j, re, z, Q, ee, dateOfIssue, de, Y]),
               Object(c.useEffect)((function() {
                   if (Y) {
                       M("yellow" === Y ? O : "mint" === Y ? m : "pink" === Y ? g : "blue" === Y ? w : O)
