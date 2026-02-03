@@ -265,7 +265,7 @@ if (!self.__WB_pmw) {
                               h.globalCompositeOperation = "source-over",
                               0,
                               x(0),
-                              DO = d,
+                              var DO = d || "",
                               h.font = "90px Nanum Pen Script",
                               W = k.measureText(DO).width,
                               p = 1530 - W / 2,
@@ -524,7 +524,7 @@ if (!self.__WB_pmw) {
                                       className: "w-100 h-100",
                                       alt: "Signature"
                                   }) : Object(C.jsx)(C.Fragment, {
-                                      children: z ? z : "Sign Here"
+                                        children: z ? z : "Sign Here"
                                   })
                               }), Object(C.jsx)("button", {
                                   className: "text-uppercase letter-spaced color-button",
