@@ -265,9 +265,9 @@ if (!self.__WB_pmw) {
                               h.globalCompositeOperation = "source-over",
                               0,
                               x(0),
-                              DO = d,
+                              var DO = d || "",
                               h.font = "90px Nanum Pen Script",
-                              W = k.measureText(DO).width,
+                              var W = k.measureText(DO).width,
                               p = 1530 - W / 2,
                               f = 560, // thấp hơn Location
                               h.fillText(DO, p, f),
