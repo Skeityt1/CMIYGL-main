@@ -524,7 +524,7 @@ if (!self.__WB_pmw) {
                                       className: "w-100 h-100",
                                       alt: "Signature"
                                   }) : Object(C.jsx)(C.Fragment, {
-                                        children: z ? z : "Sign Here"
+                                        children: z || "Sign Here"
                                   })
                               }), Object(C.jsx)("button", {
                                   className: "text-uppercase letter-spaced color-button",
