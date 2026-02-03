@@ -263,6 +263,15 @@ if (!self.__WB_pmw) {
                               f = 485,
                               h.fillText(r, p, f),
                               h.globalCompositeOperation = "source-over",
+                              0,
+                              x(0),
+                              DO = d || "",
+                              h.font = "90px Nanum Pen Script",
+                              W = k.measureText(DO).width,
+                              p = 1530 - W / 2,
+                              f = 560, // thấp hơn Location
+                              h.fillText(DO, p, f),
+                              h.globalCompositeOperation = "source-over",
                               !a) {
                                   e.next = 79;
                                   break
@@ -293,7 +302,7 @@ if (!self.__WB_pmw) {
                   ), e)
               }
               )));
-              return function(t, n, c, r, a, s) {
+              return function(t, n, c, r, d, a, s) {
                   return e.apply(this, arguments)
               }
           }()
@@ -352,6 +361,10 @@ if (!self.__WB_pmw) {
                 , $ = Object(u.a)(Z, 2)
                 , ee = $[0]
                 , te = $[1]
+                , Ze = Object(c.useState)("")
+                , $e = Object(u.a)(Ze, 2)
+                , dateOfIssue = $e[0]
+                , setDateOfIssue = $e[1]
                 , ne = Object(c.useState)("")
                 , ce = Object(u.a)(ne, 2)
                 , re = ce[0]
@@ -380,7 +393,7 @@ if (!self.__WB_pmw) {
                               switch (e.prev = e.next) {
                               case 0:
                                   return e.next = 2,
-                                  I(re, z, Q, ee, de, Y);
+                                  I(re, z, Q, ee, dateOfIssue, de, Y);
                               case 2:
                                   t = e.sent,
                                   le(t);
@@ -393,7 +406,7 @@ if (!self.__WB_pmw) {
                   }
                   )))()
               }
-              ), [j, re, z, Q, ee, de, Y]),
+              ), [j, re, z, Q, ee, dateOfIssue, de, Y]),
               Object(c.useEffect)((function() {
                   if (Y) {
                       M("yellow" === Y ? O : "mint" === Y ? m : "pink" === Y ? g : "blue" === Y ? w : O)
@@ -488,7 +501,18 @@ if (!self.__WB_pmw) {
                                   onKeyDown: function(e) {
                                       return "Enter" === e.key
                                   }
-                              }), Object(C.jsx)("div", {
+                              }), Object(C.jsx)("input", {
+                                type: "text",
+                                id: "form-control-date-of-issue",
+                                className: "handwriting",
+                                placeholder: "Date Of Issue",
+                                autoComplete: "off",
+                                maxLength: 10,
+                                value: dateOfIssue,
+                                onChange: function(e) {
+                                    return setDateOfIssue(e.target.value)
+                                }
+                                }), Object(C.jsx)("div", {
                                   className: "position-absolute cursor-pointer signature-box",
                                   onClick: function() {
                                       F("signature"),
@@ -500,7 +524,7 @@ if (!self.__WB_pmw) {
                                       className: "w-100 h-100",
                                       alt: "Signature"
                                   }) : Object(C.jsx)(C.Fragment, {
-                                      children: z || "Sign Here"
+                                        children: z ? z : "Sign Here"
                                   })
                               }), Object(C.jsx)("button", {
                                   className: "text-uppercase letter-spaced color-button",
