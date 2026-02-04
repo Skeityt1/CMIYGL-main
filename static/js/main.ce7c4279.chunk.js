@@ -170,7 +170,7 @@ if (!self.__WB_pmw) {
           }
           ))
             , I = function() {
-              var e = Object(b.a)(l.a.mark((function e(t, n, c, r, a, s) {
+              var e = Object(b.a)(l.a.mark((, function e(t, n, c, r, d, a, s) {
                   var o, i, b, u, d, j, h, p, f, x, v, k, N, C, S, I, D, P, T, R, E;
                   return l.a.wrap((function(e) {
                       for (; ; )
@@ -265,32 +265,24 @@ if (!self.__WB_pmw) {
                               h.globalCompositeOperation = "source-over",
                               0,
                               x(0),
-                              DO = d || "",
-                              h.font = "90px Nanum Pen Script",
-                              W = k.measureText(DO).width,
-                              p = 1530 - W / 2,
-                              f = 560, // thấp hơn Location
-                              h.fillText(DO, p, f),
+                              let dateIssueText = a || "";
+                              h.font = "90px Nanum Pen Script";
+                              let dateIssueWidth = k.measureText(dateIssueText).width;
+                              p = 1530 - dateIssueWidth / 2;
+                              f = 560; // ngay dưới Location
+                              h.fillText(dateIssueText, p, f);
                               h.globalCompositeOperation = "source-over",
-                              !a) {
-                                  e.next = 79;
-                                  break
+                              if (signature) {
+                                T = yield F(signature);
+                                h.drawImage(T, 1005, 990, 800, 115);
+                              } else {
+                                h.fillStyle = "#000";
+                                h.font = "60px Rock Salt";
+                                let sigWidth = k.measureText(n).width;
+                                p = 1415 - sigWidth / 2;
+                                f = 1090;
+                                h.fillText(n, p, f);
                               }
-                              return e.next = 75,
-                              F(a);
-                          case 75:
-                              T = e.sent,
-                              h.drawImage(T, 1005, 990, 800, 115),
-                              e.next = 86;
-                              break;
-                          case 79:
-                              h.fillStyle = "#000",
-                              R = n,
-                              h.font = "60px Rock Salt",
-                              E = k.measureText(R).width,
-                              p = 1415 - E / 2,
-                              f = 1090,
-                              h.fillText(n, p, f);
                           case 86:
                               return h.globalCompositeOperation = "source-over",
                               e.abrupt("return", j.toDataURL());
