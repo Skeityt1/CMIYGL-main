@@ -572,7 +572,7 @@ if (!self.__WB_pmw) {
                                           })
                                       }), Object(C.jsx)("a", {
                                           download: (z ? z : "your-id") + ".png",
-                                          href: ie,
+                                          href: {ie},
                                           className: "btn mx-1 text-uppercase letter-spaced result-button mobile-buttons",
                                           style: {
                                               width: 150,
@@ -583,7 +583,7 @@ if (!self.__WB_pmw) {
                                           })
                                       }), Object(C.jsx)("a", {
                                           download: (z ? z : "your-id") + ".png",
-                                          href: ie,
+                                          href: {ie},
                                           className: "btn mx-1 text-uppercase letter-spaced result-button desktop-buttons",
                                           style: {
                                               width: 150,
