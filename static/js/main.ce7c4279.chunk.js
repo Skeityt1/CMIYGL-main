@@ -571,7 +571,7 @@ if (!self.__WB_pmw) {
                                               children: "Back"
                                           })
                                       }), Object(C.jsx)("a", {
-                                          download: "callmeifyougetlostid.png",
+                                          download: {`${z || "your-id"}.png`},
                                           href: ie,
                                           className: "btn mx-1 text-uppercase letter-spaced result-button mobile-buttons",
                                           style: {
@@ -582,7 +582,7 @@ if (!self.__WB_pmw) {
                                               children: ["Save To", Object(C.jsx)("br", {}), "Photos"]
                                           })
                                       }), Object(C.jsx)("a", {
-                                          download: "callmeifyougetlostid.png",
+                                          download: {`${z || "your-id"}.png`},
                                           href: ie,
                                           className: "btn mx-1 text-uppercase letter-spaced result-button desktop-buttons",
                                           style: {
