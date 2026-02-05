@@ -596,7 +596,7 @@ if (!self.__WB_pmw) {
                                           className: "split-rows",
                                           children: "\xa0"
                                       }), Object(C.jsx)("a", {
-                                          href: "https://www.facebook.com/sharer/sharer.php?u=https://skeityt1.github.io/CMIYGL-main/",
+                                          href: "https://www.facebook.com/sharer/sharer.php?u=https://skeityt1.github.io/CMIYGL-main/generator",
                                           target: "_blank",
                                           className: "btn mx-1 text-uppercase letter-spaced result-button",
                                           style: {
