@@ -596,7 +596,7 @@ if (!self.__WB_pmw) {
                                           className: "split-rows",
                                           children: "\xa0"
                                       }), Object(C.jsx)("a", {
-                                          href: "https://www.facebook.com/sharer/sharer.php?u=https://www.callmeifyougetlost.com/generator",
+                                          href: "https://www.facebook.com/sharer/sharer.php?u=https://skeityt1.github.io/CMIYGL-main/",
                                           target: "_blank",
                                           className: "btn mx-1 text-uppercase letter-spaced result-button",
                                           style: {
@@ -607,7 +607,7 @@ if (!self.__WB_pmw) {
                                               children: "Share On Facebook"
                                           })
                                       }), Object(C.jsx)("a", {
-                                          href: "https://twitter.com/intent/tweet?url=https://www.callmeifyougetlost.com/generator&text=Get%20your%20passport%20and%20#callmeifyougetlost",
+                                          href: "https://twitter.com/intent/tweet?url=https://skeityt1.github.io/CMIYGL-main/generator&text=Get%20your%20passport%20and%20#callmeifyougetlost",
                                           target: "_blank",
                                           className: "btn mx-1 text-uppercase letter-spaced result-button",
                                           style: {
